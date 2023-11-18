@@ -1,0 +1,128 @@
+*{
+   margin: 0;
+   padding: 0;
+   /* aqui llamamos nuestra fuente de google fonts  */
+   font-family: 'Montserrat', sans-serif;
+}
+
+
+/* etiquetas */
+body {
+   background-color: rgb(233, 233, 225);
+}
+
+
+/* MENU DE NAVEGACION  */
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-content: center ;
+   padding: 10px;
+}
+
+
+div ul li {
+   margin-bottom: 30px;
+   list-style: none;
+}
+
+div ul li a {
+   text-decoration: none;
+   margin-right: 10px;
+}
+
+div ul li a:hover {
+   color: red;
+   font-size: 20px;
+}
+
+/* TITULO  */
+
+.titulo {
+   text-align: center;
+   color: blue;
+   margin-bottom: 20px;
+}
+
+/* IMAGEN  */
+
+.super {
+   border-radius:10px ;
+   margin-left: 90px;
+}
+
+/* DESCRIPCION Y ARTICULOS */
+
+/* classes  */
+.descripcion {
+   color: green;
+   margin: 30px 0px 10px 10px;
+   /* arriba, derecha, abajo, izquierda  */
+   text-align: center;
+}
+
+
+
+/* id  */
+/* es un identificador unico que no permite ser repetido  */
+
+#heroe{
+   border-radius: 10px;
+   margin-left: 560px;
+}
+
+
+/* aplicar estilos  */
+   /* etiquetas html  */
+   /* por clases que nos permiten repetir el codigo  */
+   /* el id solo se puede usar 1 sola vez  */
+
+.contenedor-h{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 20px;
+   padding: 20px;
+}
+
+.grid-item {
+   background-color: #3498db;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   border-radius: 5px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Móviles pequeños */
+@media (max-width: 600px) {
+   body {
+      background-color: crimson;
+   }
+   .linea-h{
+      border-bottom: 1px solid white;
+   }
+}
+
+/* Celulares en horizontal y tablets pequeñas */
+@media (min-width: 601px) and (max-width: 920px) {
+   body {
+      background-color: #3498db;
+   }
+   .linea-h{
+      border-bottom: 3px solid black;
+   }
+}
+
+/* Tablets y dispositivos más grandes */
+@media (min-width: 921px) and (max-width:1200px){
+   body {
+      background-color: gold;
+   }
+}
